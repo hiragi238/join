@@ -1,0 +1,602 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+}
+ul{
+    padding:0;
+}
+li{
+    display: inline-block;
+    list-style: none;
+}
+body{
+    width: 100%;
+    margin:0;
+    text-align: center;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "メイリオ", Meiryo, Osaka, "ＭＳ Ｐ";
+}
+main{
+    width: 100%;
+    padding-top: 50px;
+}
+header{
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+.header-wrapper{
+    width:100%;
+    box-shadow:0 3px 10px gray;
+    height:50px;
+    position: fixed;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+
+}
+.navi-wrapper{
+    margin-left:20px;
+}
+.logo{
+
+    display: inline-block;
+}
+.logo a{
+    vertical-align: middle;
+    height: 40px;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.logo img{
+    margin: 0;
+    width:120px;
+    height:40px;
+    display: inline-block;
+}
+.logo a h1{
+    display: inline-block;
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: 0;
+    margin-left: 5px;
+    color: black;
+}
+.logo a:hover{
+    color: black;
+    text-decoration: none;
+}
+.navi{
+    display: inline-block;
+    text-align: right;
+    vertical-align: middle;
+    padding-right: 20px;
+    padding-left: 10px;
+}
+.navi ul{
+    margin: 0;
+    padding:0;
+}
+.navi ul li {
+    display: inline-block;
+    margin-left:10px;
+}
+.navi ul li a{
+    position: relative;
+    color: black;
+}
+.navi ul li a::after {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #333;
+    transform: scale(0, 1);
+    transform-origin: center top;
+    transition: transform .3s;
+}
+.navi ul li a:hover{
+    color: black;
+    text-decoration: none;
+}
+.navi ul li a:hover::after {
+    transform: scale(1, 1);
+}
+.navi-buttons {
+    display: inline-block;
+    margin-right:20px;
+}
+.navi-buttons ul{
+    margin: 0;
+    padding:0;
+}
+.navi-buttons li{
+    display: inline-block;
+    height:30px;
+    width:100px;
+    border-radius: 15px;
+    line-height: 30px;
+    text-align: center;
+    background-color: white;
+    border:teal solid 1px ;
+    font-size: 15px;
+}
+.navi-buttons a{
+    color:teal
+}
+.navi-buttons li:last-child{
+    border: blue solid 1px;
+}
+.navi-buttons li:last-child a{
+    color: blue;
+}
+.navi-buttons a:hover{
+    text-decoration: none;
+    color: teal;
+}
+.navi-buttons li:last-child a:hover{
+    color: blue;
+}
+.top-view,.footer-view{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:auto;
+    margin-top:-8% ;
+    background-image:url("img/66873_s.jpg");
+    width: 100%;
+    height: 0;
+    /* (画像の高さ / 画像の横幅) × 100 */
+    padding-top: 66.6666666667%;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    position: relative;
+}
+.view-head{
+    position: absolute;
+    width: 100%;
+    bottom:5%;
+    text-align: center;
+    
+}
+.view-head-wrapper{
+    display: inline-block;
+    width: 90%;
+    height: auto;
+}
+.view-head-wrapper>div{
+    display: inline-block;
+    vertical-align: middle;
+}
+.view-txt{
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+.view-head p{
+    font-size: 20px;
+}
+.view-head .buttons{
+    margin-left: 10px;
+}
+.button{
+    display: inline-block;
+    height:40px;
+    width:200px;
+    border-radius: 20px;
+    line-height: 40px;
+    text-align: center;
+    background-color: turquoise;
+    font-size: 15px;
+    color: white;
+}
+.buttons .button:last-child{
+    background-color: skyblue;
+}
+.button a{
+    color: white;
+}
+section{
+    padding-top: 50px;
+    text-align: center;
+}
+.section-txt{
+    width:90%;
+    display: inline-block;
+}
+.section-txt>div{
+    display: inline-block;
+}
+.section-title{
+    font-size: 40px;
+    color:turquoise;
+    font-weight: 600;
+    font-family: sans-serif;
+    border-bottom: 2px solid turquoise;
+    margin-right: 5%;
+}
+.boxes{
+    display: inline-block;
+    width:90%;
+    margin-top:40px;
+}
+.boxes li{
+    display: inline-block;
+    padding: 0;
+    text-align: left;
+    padding:0 10px;
+    vertical-align: top;
+}
+.box-img{
+    border: turquoise 1px solid;
+    margin-bottom: 10px;
+    height:0;
+     padding-bottom:55%;
+     overflow: hidden;
+}
+.boxes li img{
+    width: 100%;
+ 
+}
+.box-title{
+    margin-bottom: 8px;
+}
+.box-title .step{
+    display: inline-block;
+    border: 1px solid turquoise;
+    color: turquoise;
+    font-size: 15px;
+    padding: 1px 3px;
+    vertical-align: middle;
+}
+.box-title h1{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    margin:0
+}
+.box-txt>h1{
+    font-size: 18PX;
+}
+.box-txt p{
+    font-size: 14px;
+}
+.color-boxes ul{
+    width: 100%;
+    margin: 0;
+}
+.color-boxes li{
+   padding: 0;
+}
+.color-boxes .box-wrapper{
+    background-color: gainsboro;
+    margin: 10px 10px;
+    padding: 15px;
+    border-radius: 30px;
+    text-align: center;
+}
+.color-boxes .box-txt p{
+    text-align: justify;
+}
+.per-view{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:400px;
+    margin-top:10px;
+    background-image:url("img/53960_s.jpg");
+    width: 100%;
+    /* (画像の高さ / 画像の横幅) × 100 */
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+}
+.per-view .view-head{
+    position: absolute;
+    top: 20%;
+}
+.per-view .view-head li{
+    display: inline-block;
+    background-color: white;
+    opacity: 0.9;
+    width:220px;
+    height: 220px;
+    border-radius: 50%;
+    margin:0 1%;
+    text-align: center;
+    vertical-align: middle;
+}
+.per-txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 220px;
+}
+.per-txt h1{
+    font-size: 35px;
+}
+.per-txt h2{
+    font-size:20px;
+}
+.per-boxes{
+    width: 100%;
+    padding: 0;
+}
+.per-boxes li{
+    padding: 0;
+}
+.per-boxes .box-wrapper{
+    padding:0 5%;
+}
+.row{
+    margin: 0;
+}
+.per-boxes h2{
+    font-size: 15px;
+    text-align: center;
+}
+.per-boxes p{
+    text-align: justify;
+}
+.footer-view {
+    background-image: url("img/1000199_s.jpg");
+    margin: 0;
+    padding-top: 30%;
+    background-position: center;
+}
+.footer-view .view-head{
+    display: inline-block;
+    vertical-align: middle;
+
+}
+.footer-info{
+    padding:30px 0;
+    width:100%;
+    text-align: center;
+}
+.footer-info .navi-wrapper{
+    margin:0
+}
+.footer-navi,.footer-info .logo{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px 0;
+}
+.footer-navi{
+    width: 400px;
+    margin-left: 10px;
+    text-align: center;
+}
+.footer-navi ul{
+    margin: 0;
+}
+.footer-navi li{
+    margin:0 1%;
+    font-size: 14px;
+}
+.footer-base{
+    width:100%;
+    padding: 10px;
+    background-color: gainsboro;
+}
+.footer-base p{
+    margin:0;
+}
+.sp{
+    display: none;
+}
+/*ハンバーガー*/
+@media screen and (max-width: 910px){
+    .logo{
+        margin-left: 5px;
+    }
+    .navi_humberger {
+        display: inline-block;
+        position: relative;
+        width: 1.75rem;
+        height: 1.5rem;
+        vertical-align: middle;
+    }
+    .navi_humberger div {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #333;
+        position: absolute;
+        transition: transform .5s, opacity .5s;
+    }
+    .navi_humberger div:nth-child(1) {
+        top: 0;
+    }
+    .navi_humberger div:nth-child(2) {
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    .navi_humberger div:nth-child(3) {
+        bottom: 0;
+    }
+    /*クリック後*/
+    .navi_humberger.show div:nth-child(1) {
+        transform: translateY(10px) rotate(-45deg);
+    }
+    .navi_humberger.show div:nth-child(2) {
+        opacity: 0;
+    }
+    .navi_humberger.show div:nth-child(3) {
+        transform: translateY(-12px) rotate(45deg);
+    }
+    .navi {
+        position: fixed;
+        top: 3rem;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        padding: 0;;
+        visibility: hidden;
+        background-color: white;
+        transition: opacity .5s, visibility .5s;
+        text-align: left;
+    }
+    .navi.show {
+        opacity: 1;
+        visibility: visible;
+        width:100%;
+        
+        transition: opacity .5s, visibility .5s;
+    }
+    .navi ul li{
+        display: block;
+        height:40px;
+        width:100%;
+        margin:0;
+        padding-left: 5%;
+        line-height: 40px;;
+        border-bottom: 1px solid black;
+    }
+    .navi ul li:first-of-type{
+        border-top: 1px solid black;
+        margin-top: 2px;
+    }
+    .pc{
+        display: none;
+    }
+    .sp{
+        display: inline-block;
+    }
+    .navi-button{
+        margin-right: 2%;
+        font-size: 30px;
+    }
+    .navi_humberger{
+        margin-left: 2%;
+    }
+    .navi-wrapper{
+        margin:0;
+    }
+    .logo{
+        margin: 0;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 740px){
+    .per-view .view-head{
+        position: absolute;
+        top: 45px;
+    }
+    .per-view{
+        height:500px;
+    }
+}
+@media screen and (max-width: 590px){
+    
+    .view-txt h1{
+        font-size: 30px;
+    }
+    .view-txt p{
+        font-size: 18px;
+    }
+    .buttons{
+        width:100%;
+    }
+    .buttons .button{
+        width:70%;
+    }
+    .buttons .button:last-child{
+        margin-top: 10px;
+    }
+    .footer-view{
+        padding-top: 40%;
+    }
+    .footer-info{
+        padding: 8px 0 0 0;;
+    }
+    .footer-navi {
+        padding: 0;;
+        background-color: white;
+        text-align: center;
+        width:100%;
+        margin: 0;
+    }
+    .footer-navi ul li{
+        display: block;
+        height:40px;
+        width:100%;
+        margin:0;
+        line-height: 40px;;
+        border-bottom: 1px solid gray;
+    }
+    .footer-navi ul li:first-of-type{
+        border-top: 1px solid gray;
+        margin-top: 2px;
+    }
+    .footer-base{
+        font-size: 12px;
+    }
+    .section-title{
+        font-size: 30px;
+    }
+    .section-subtxt{
+        font-size: 15px;
+        text-align: justify;
+    }
+}
+@media screen and (max-width: 500px){
+    .footer-view{
+        padding-top: 50%;
+    }
+    .per-view .view-head li{
+        height:190px;
+        width:190px
+    }
+    .per-txt{
+        height:190px;
+    }
+    .per-txt h1{
+        font-size: 25px;
+    }
+    .per-txt h2{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 418px){
+    .top-view{
+        padding-top: 100%;
+    }
+
+    .per-view .view-head li{
+        height:160px;
+        width:160px;
+        margin-top:5px;
+    }
+    .per-txt{
+        height:160px;
+    }
+    .per-txt h1{
+        font-size: 20px;
+    }
+    .per-txt h2{
+        font-size: 15px;
+    }
+    .view-txt h1{
+        font-size: 25px;
+    }
+    .footer-view{
+        padding-top: 60%;
+    }
+    #sec4 .box-txt h2{
+        font-size: 13px;;
+    }
+    #sec4 .box-txt p{
+        font-size: 12px;
+    }
+}
